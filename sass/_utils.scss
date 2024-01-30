@@ -1,17 +1,72 @@
+html {
+    font-size: 10px;
+}
+
 body {
     font-family: var(--primary-font);
-    color: var(--primary-text-color);
+    color: var(--primary-color);
+    line-height: 1.25;
+    background-color: #151522;
+}
+
+.main__wrapper {
+    overflow: hidden;
 }
 
 .container {
-    max-width: 1080px;
+    max-width: 114rem;
     margin: 0 auto;
 
     @media screen and (max-width:1200px) {
-        max-width: 690px;
+        max-width: 32rem;
+    }
+}
+
+.main__title {
+    font-size: 9rem;
+    font-weight: 400;
+    line-height: 1.1;
+    letter-spacing: -.5rem;
+
+    span {
+        background-image: linear-gradient(to right, #E48E3E, #B14BF4, #4D91FF);
+        -webkit-background-clip: text;
+        color: transparent;
+        background-clip: text;
     }
 
-    @media screen and (max-width:767px) {
-        max-width: 320px;
+    @media screen and (max-width:1200px) {
+        font-size: 3.6rem;
+        line-height: 1.25;
+        text-align: center;
+        letter-spacing: -.2rem;
     }
+}
+
+.main__button {
+    width: 19.5rem;
+    height: 5.4rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 1.2rem;
+    background-image: linear-gradient(88deg, #E48E3E -8.07%, #B14BF4 58.61%, #4D91FF 151.53%);
+
+    text-decoration: none;
+
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1;
+
+    @media screen and (max-width:1200px) {
+        width: 100%;
+    }
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--second-font);
 }

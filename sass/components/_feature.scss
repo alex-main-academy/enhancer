@@ -1,0 +1,116 @@
+.feature {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    padding-top: 10.4rem;
+    padding-bottom: 12.6rem;
+    margin-top: -3.6rem;
+
+    border-top: .1rem solid #2D2D3B;
+    border-bottom: .1rem solid #2D2D3B;
+
+    background-image: url(../img/feature/bg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top left;
+
+    @media screen and (max-width:1200px) {
+        margin-top: 0;
+        padding-top: 9.4rem;
+        padding-bottom: 12.3rem;
+
+        background-image: url(../img/feature/stars.webp);
+        background-size: 7rem;
+        background-position: top 3rem center;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: -30.5rem;
+        left: 50%;
+        transform: translate(-50%, 0);
+        z-index: -1;
+
+        width: 40.7rem;
+        height: 40.7rem;
+        border-radius: 50%;
+        background-color: #8D65F8;
+        filter: blur(16.8rem);
+
+        @media screen and (max-width:1200px) {
+            width: 18rem;
+            height: 18rem;
+            top: -10.6rem;
+        }
+    }
+}
+
+.feature__title {
+    text-align: center;
+    margin-bottom: 6.1rem;
+
+    @media screen and (max-width:1200px) {
+        margin-bottom: 0;
+    }
+}
+
+.feature__list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.feature__item {
+    width: calc(100% / 3);
+    min-height: 26.3rem;
+    padding-top: 1.3rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+
+    &:nth-child(2n) {
+        padding-top: 4.1rem;
+    }
+
+    @media screen and (max-width:1200px) {
+        width: 100%;
+        min-height: auto;
+        padding-top: 2.7rem;
+        padding-bottom: 4rem;
+
+        &:last-child {
+            padding-bottom: 0;
+        }
+    }
+}
+
+.feature__item+.feature__item {
+    border-left: .1rem solid rgba(255, 255, 255, 0.07);
+
+    @media screen and (max-width:1200px) {
+        border-left: none;
+        border-top: .1rem solid rgba(255, 255, 255, 0.07);
+    }
+}
+
+.feature__subtitle {
+    font-family: var(--primary-font);
+    color: var(--gray-color);
+    font-size: 2rem;
+    line-height: 1.7;
+    font-weight: 500;
+}
+
+.feature__desc {
+    max-width: 28rem;
+    margin: 0 auto;
+
+    font-size: 1.8rem;
+    color: #DDDDDD;
+    line-height: 1.4;
+    font-weight: 300;
+    text-align: center;
+}

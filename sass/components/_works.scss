@@ -1,0 +1,206 @@
+.works {
+    position: relative;
+    padding-top: 8rem;
+    padding-bottom: 13rem;
+
+    border-top: .1rem solid #2D2D3B;
+    border-bottom: .1rem solid #2D2D3B;
+
+    overflow: hidden;
+
+    background-image: url(../img/works/bg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+
+    @media screen and (max-width:1200px) {
+        padding-top: 9rem;
+        padding-bottom: 7.5rem;
+        background-image: none;
+    }
+}
+
+.works__ellipse_top {
+    position: absolute;
+    width: 38.9rem;
+    height: 38.9rem;
+    top: -30rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 0;
+
+    border-radius: 50%;
+    background-color: rgba(254, 59, 59, 0.26);
+    filter: blur(16.8rem);
+}
+
+.works__ellipse_left {
+    position: absolute;
+    top: 47.9rem;
+    left: 3.9rem;
+    z-index: 0;
+
+    width: 34.1rem;
+    height: 34.1rem;
+    border-radius: 50%;
+    background-color: rgba(254, 59, 234, 0.21);
+    filter: blur(16.8rem);
+
+    @media screen and (max-width:1200px) {
+        width: 20rem;
+        height: 20rem;
+        background-color: #004156;
+        top: 28.7rem;
+        left: -4.5rem;
+    }
+}
+
+.works__ellipse_right {
+    position: absolute;
+    top: 40.2rem;
+    right: -4.1rem;
+    z-index: 0;
+
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    background-color: #004156;
+    filter: blur(16.8rem);
+
+    @media screen and (max-width:1200px) {
+        width: 24.9rem;
+        height: 24.9rem;
+        background-color: rgba(254, 59, 234, 0.21);
+        top: 60rem;
+        right: -16rem;
+    }
+}
+
+.works__ellipse_bottom {
+    position: absolute;
+    bottom: 8.8rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 0;
+
+    width: 28.7rem;
+    height: 28.7rem;
+    border-radius: 50%;
+    background-color: rgba(141, 101, 248, 0.70);
+    filter: blur(16.8rem);
+
+    @media screen and (max-width:1200px) {
+        display: none;
+    }
+}
+
+.works__star {
+    position: absolute;
+    top: 29.5rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    @media screen and (max-width:1200px) {
+        top: 15.6rem;
+    }
+}
+
+.works__stars {
+    position: absolute;
+    top: 41.5rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    @media screen and (max-width:1200px) {
+        top: 29.3rem;
+    }
+}
+
+.works__uptitle {
+    position: absolute;
+    top: 2.8rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 1;
+
+    @media screen and (max-width:1200px) {
+        width: 25rem;
+        top: 6.9rem;
+    }
+}
+
+.works__title {
+    position: relative;
+    z-index: 1;
+    max-width: 70rem;
+    text-align: center;
+    margin: 0 auto 8rem auto;
+    line-height: 1;
+
+    @media screen and (max-width:1200px) {
+        font-size: 3.2rem;
+        margin-bottom: 7.1rem;
+    }
+}
+
+.works__desc {
+    max-width: 43.6rem;
+    text-align: center;
+    margin: 0 auto 13.8rem auto;
+
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1.5;
+
+    @media screen and (max-width:1200px) {
+        margin-bottom: 12.3rem;
+        max-width: 29.8rem;
+    }
+}
+
+.works__list {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+
+    @media screen and (max-width:1200px) {
+        gap: 1.9rem;
+    }
+}
+
+.works__item {
+    width: 100%;
+
+    @media screen and (max-width:1200px) {
+        min-height: 22rem;
+
+        .works__swipe {
+            height: 22rem !important;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+    }
+
+    &:nth-child(2) {
+        width: calc((100% - 1.5rem) / 2);
+
+        @media screen and (max-width:1200px) {
+            width: 100%;
+        }
+    }
+
+    &:nth-child(3) {
+        width: calc((100% - 1.5rem) / 2);
+
+        @media screen and (max-width:1200px) {
+            width: 100%;
+        }
+    }
+}

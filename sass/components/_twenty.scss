@@ -1,0 +1,66 @@
+.main__swipe {
+    border-radius: 1.5rem;
+    border: .7rem solid rgba(255, 255, 255, 0.17);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        width: 100%;
+    }
+
+    @media screen and (max-width:1200px) {
+        border-radius: 2rem;
+        border-width: .4rem;
+    }
+}
+
+.twentytwenty-overlay:hover {
+    background-color: transparent;
+}
+
+.twentytwenty-horizontal .twentytwenty-after-label:before {
+    display: none;
+}
+
+.twentytwenty-horizontal .twentytwenty-before-label:before {
+    display: none;
+}
+
+.twentytwenty-handle {
+    width: 2.85rem;
+    height: 2.85rem;
+    border-radius: 50%;
+    border: .3rem solid #FFFFFF;
+    background-image: linear-gradient(85deg, #E48E3E -8.49%, #B14BF4 83.33%, #4D91FF 211.28%);
+
+    margin-left: 0;
+    margin-top: 0;
+
+    transform: translate(-50%, -50%);
+}
+
+.twentytwenty-right-arrow {
+    display: none;
+}
+
+.twentytwenty-left-arrow {
+    display: none;
+}
+
+.twentytwenty-horizontal .twentytwenty-handle:before {
+    background: rgba(255, 255, 255, 0.42);
+    width: .2rem;
+    box-shadow: none;
+    margin-bottom: 1.42rem;
+    margin-left: -.12rem;
+}
+
+.twentytwenty-horizontal .twentytwenty-handle::after {
+    background: rgba(255, 255, 255, 0.42);
+    width: .2rem;
+    box-shadow: none;
+    margin-top: 1.42rem;
+    margin-left: -.12rem;
+}

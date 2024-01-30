@@ -1,4 +1,13 @@
 :root {
-    --primary-font: '';
-    --primary-text-color: '';
+    // fonts
+    --primary-font: 'Unbounded';
+    --second-font: 'KyivType Sans';
+
+    // colors
+    --primary-color: #FFFFFF;
+    --accent-color: #AA61E9;
+    --gray-color: #D9D9D9;
+
+    // other
+    --transition-time: 300ms;
 }

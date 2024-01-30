@@ -1,7 +1,81 @@
+// Unbounded fonts
 @font-face {
-    font-family: 'Comfortaa';
-    src: url("../fonts/Comfortaa/Comfortaa-Regular.ttf");
+    font-family: 'Unbounded';
+    src: url("../fonts/unbounded/Unbounded-Light.ttf");
+    font-weight: 300;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Unbounded';
+    src: url("../fonts/unbounded/Unbounded-Regular.ttf");
     font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Unbounded';
+    src: url("../fonts/unbounded/Unbounded-Medium.ttf");
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Unbounded';
+    src: url("../fonts/unbounded/Unbounded-SemiBold.ttf");
+    font-weight: 600;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Unbounded';
+    src: url("../fonts/unbounded/Unbounded-Bold.ttf");
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+}
+
+// KyivType Sans font
+@font-face {
+    font-family: 'KyivType Sans';
+    src: url("../fonts/kyivtypesans/KyivTypeSans-Light.ttf");
+    font-weight: 300;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'KyivType Sans';
+    src: url("../fonts/kyivtypesans/KyivTypeSans-Regular.ttf");
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'KyivType Sans';
+    src: url("../fonts/kyivtypesans/KyivTypeSans-Medium-.ttf");
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'KyivType Sans';
+    src: url("../fonts/kyivtypesans/KyivTypeSans-Bold.ttf");
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'KyivType Sans';
+    src: url("../fonts/kyivtypesans/KyivTypeSans-Heavy.ttf");
+    font-weight: 800;
     font-display: swap;
     font-style: normal;
 }
