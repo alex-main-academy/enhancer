@@ -1,0 +1,198 @@
+.faq {
+    position: relative;
+    padding-top: 22.5rem;
+    padding-bottom: 7.7rem;
+    border-bottom: .1rem solid #2D2D3B;
+    overflow: hidden;
+
+    background-image: url(../img/faq/bg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+
+    @media screen and (max-width:1200px) {
+        padding-top: 35rem;
+        margin-top: -26rem;
+        padding-bottom: 6.5rem;
+
+        background-image: url(../img/faq/stars-left-s.webp), url(../img/faq/stars-right-s.webp);
+        background-repeat: no-repeat;
+        background-size: 3.8rem, 3.3rem;
+        background-position: top 29rem left 4.6rem, top 43rem right 3.4rem;
+    }
+}
+
+.faq .container {
+    background-image: url(../img/faq/stars-left.webp), url(../img/faq/stars-right.webp);
+    background-repeat: no-repeat;
+    background-size: 7.7rem;
+    background-position: top 13.4rem left 21.2rem, top 18.4rem right 22.4rem;
+
+    @media screen and (max-width:1200px) {
+        background-image: none;
+    }
+}
+
+.faq__bg_top {
+    position: absolute;
+    z-index: 1;
+    top: -5rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 192rem;
+
+    @media screen and (max-width:1200px) {
+        display: none;
+    }
+}
+
+.faq__bg_top_s {
+    display: none;
+
+    @media screen and (max-width:480px) {
+        display: block;
+        position: absolute;
+        z-index: 1;
+        top: -5.3rem;
+        left: 50%;
+        transform: translate(-50%, 0);
+        width: 70rem;
+    }
+}
+
+.faq__ellipse_top {
+    position: absolute;
+    top: -29rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    width: 58.7rem;
+    height: 58.7rem;
+    border-radius: 50%;
+
+    background-color: rgba(141, 101, 248, 0.27);
+    filter: blur(16.8rem);
+}
+
+.faq__star {
+    position: absolute;
+    z-index: 2;
+    top: 13.3rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    @media screen and (max-width:1200px) {
+        top: 31rem;
+        width: 2.1rem;
+        height: 2.1rem;
+    }
+}
+
+.faq__title {
+    text-align: center;
+    max-width: 76.6rem;
+    margin: 0 auto 4.5rem auto;
+}
+
+.faq__desc {
+    max-width: 48.8rem;
+    font-size: 1.8rem;
+    color: #DDDDDD;
+    font-weight: 300;
+    line-height: 1.4;
+    text-align: center;
+    margin: 0 auto 2.7rem auto;
+
+    @media screen and (max-width:1200px) {
+        font-size: 1.6rem;
+    }
+}
+
+.faq__link {
+    display: block;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.5;
+    text-decoration: none;
+    margin-bottom: 9.2rem;
+
+    @media screen and (max-width:1200px) {
+        font-size: 1.4rem;
+        margin-bottom: 6rem;
+    }
+}
+
+.faq__list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.faq__item {
+    border-radius: 2rem;
+    border: .1rem solid #2D2D3B;
+    background-color: #141421;
+    padding: 2.8rem 3.7rem;
+
+    &.active {
+        .faq__answer {
+            font-size: 1.4rem;
+            padding-top: 2rem;
+        }
+    }
+}
+
+.faq__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.faq__question {
+    font-family: var(--primary-font);
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1.5;
+
+    @media screen and (max-width:1200px) {
+        max-width: 22rem;
+    }
+}
+
+.faq__button {
+    width: 2.4rem;
+    height: 2.4rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-image: url(../img/faq/open-icon.svg);
+    background-repeat: no-repeat;
+    background-size: 1.7rem;
+    background-position: center;
+
+    &.active {
+        background-image: none;
+
+        .faq__close_icon {
+            display: block;
+        }
+    }
+}
+
+.faq__close_icon {
+    display: none;
+    width: 1.68rem;
+    height: .4rem;
+    background-image: linear-gradient(92deg, #E48E3E 20.62%, #B14BF4 66.16%, #4D91FF 157.16%);
+}
+
+.faq__answer {
+    padding-top: 0;
+    font-size: 0;
+    font-weight: 300;
+    line-height: 1.7;
+    transition-duration: var(--transition-time);
+}
