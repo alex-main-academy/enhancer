@@ -83,12 +83,40 @@ if (faqSection) {
 
                 if (faqToggle) {
                     currentItem.classList.add("active");
-                    clickedElement.classList.add("active");
                 } else {
                     currentItem.classList.remove("active");
-                    clickedElement.classList.remove("active");
                 }
             }
         });
+    });
+}
+
+// work with payment method modal
+const paymentMethodModal =
+    document.querySelector(".js-payment-method-overlay") || null;
+
+if (paymentMethodModal) {
+    const openPaymentMethodModalBtn = document.querySelectorAll(
+        ".js-open-payment-method"
+    );
+
+    openPaymentMethodModalBtn.forEach((btn) => {
+        btn.addEventListener("click", () => {
+            paymentMethodModal.classList.add("is-payment-method");
+        });
+    });
+
+    document.addEventListener("keydown", function (event) {
+        if (event.key === "Escape" || event.key === "Esc") {
+            paymentMethodModal.classList.remove("is-payment-method");
+        }
+    });
+
+    paymentMethodModal.addEventListener("click", (event) => {
+        if (event.target.classList.contains("method__overlay")) {
+            paymentMethodModal.classList.remove("is-payment-method");
+        } else {
+            return;
+        }
     });
 }

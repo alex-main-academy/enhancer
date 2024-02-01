@@ -140,6 +140,14 @@
             font-size: 1.4rem;
             padding-top: 2rem;
         }
+
+        .faq__button {
+            background-image: none;
+        }
+
+        .faq__close_icon {
+            display: block;
+        }
     }
 }
 
@@ -172,14 +180,6 @@
     background-repeat: no-repeat;
     background-size: 1.7rem;
     background-position: center;
-
-    &.active {
-        background-image: none;
-
-        .faq__close_icon {
-            display: block;
-        }
-    }
 }
 
 .faq__close_icon {
